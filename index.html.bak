@@ -13,7 +13,7 @@
 <body>
     <div class="main-div">
         <h1 style="position:absolute; left:50%; transform:translateX(-50%)">Color Generator</h1>
-        <p id="currentClr">#000000</p>
+        <p id="currentClr">#ffffff</p>
         <button id="generateBtn" onclick="setClr();">Get new color</button>
         <button id="copyClr" onclick="copyClr();">Copy color</button>
     </div>
