@@ -3,9 +3,6 @@ html
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
-body{
-    background-color: #000000;
-}
 .main-div
 {
     height: 30%;
@@ -15,23 +12,22 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, .9);
-    color:white;
-    box-shadow:1px 1px 10px red;
+    border-radius: 5px;
+    background-color: rgb(194, 194, 194);
+    box-shadow:5px 5px 5px black;
 }
 .alert{
     position:absolute;
     top: -50px;
     left:50%;
-    background-color: rgba(0, 0, 0, .9);
+    background-color:rgb(194, 194, 194);
     padding: 7px 10px;
     transform: translateX(-50%);
-    border-radius: 15px;
 }
 
 .alert::after{
-    border-color:rgba(0, 0, 0, .9) transparent;
+    border-color:rgb(194, 194, 194) transparent
+    transparent transparent;
     border-style:solid;
     border-width: 7px 7px 0px 7px;
     bottom:1px;
@@ -59,19 +55,14 @@ body{
     left:50%;
     transform:translate(-60%, -50%);
     margin-top:10px;
-    box-shadow: 2px 2px 5px rgba(250, 50, 0, 1);
-    background: none;
-    color:white;
 }
 #copyClr
 {
     position: inherit;
     top:80%;
     left:52%;
-    transform:translate(-70%, -52%);
+    transform:translate(-80%, -52%);
     margin-top:25px;
-    background: none;
-    color:white;
 }
 
 #generateBtn, #copyClr{
@@ -82,12 +73,16 @@ body{
     font-size:1em;
     font-family: 'Roboto', sans-serif;
     outline:0;
-    box-shadow: 1px 1px 3px rgba(250, 50, 0, 1);
-    transition: font-size 200ms, transform 200ms;
+    box-shadow: 3px 3px rgba(0, 0, 0, .4);
+    transition: background-color 200ms;
 }
-#generateBtn:hover{
-    transform: translate(calc(-60% + 3px), calc(-52% + -3px));
+
+#generateBtn:hover, #copyClr:hover
+{
+    background-color:rgb(160, 160, 160);
+    color:white;
 }
-#copyClr:hover{
-    transform: translate(calc(-70% + 5px), calc(-52% + -3px));
+#generateBtn:active, #copyClr:active {
+    background-color: rgb(120, 120, 120);
 }
+
